@@ -90,5 +90,5 @@ Signature: Abdulaziz Saleh Date: 2026-11-14
 | Member name | KFUPM ID | Signature | Date |
 |-------------|----------|-----------|------|
 | Abdul Azziz Alkhatib | 202372090 | Abdul Azziz Alkhatib | 2026-11-14 |
-| Abdulrahman Dhaer Khatib | 202460820 | Abdulrahman Dhaer Khatib | 2026-11-14 |
+| Abdulrahman Daher Khatib | 202460820 | Abdulrahman Daher Khatib | 2026-11-14 |
 | Abdulaziz Saleh | 202456880 | Abdulaziz Saleh | 2026-11-14 |
