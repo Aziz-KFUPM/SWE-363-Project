@@ -1,0 +1,15 @@
+# Dependencies and build output
+node_modules/
+dist/
+dist-ssr/
+
+# Secrets and local files
+.env
+.env.*
+*.local
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.log
