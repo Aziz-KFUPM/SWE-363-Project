@@ -78,10 +78,11 @@ export const checklistItems = ["Drinking water", "Shaded area", "Separate rest a
 
 // Rows for the supervisor live board (FR-SV5)
 export const liveBoard = [
-  { worker: "Ali Hassan", task: "Pump maintenance", state: "In progress", event: "Check-in 08:58", breaks: [], flags: [] },
-  { worker: "Omar Saeed", task: "Pump maintenance", state: "On break", event: "Break 09:45", breaks: ["09:45 - now"], flags: [] },
-  { worker: "Fahad Aziz", task: "Equipment inspection", state: "Late", event: "Start +35 min", breaks: [], flags: ["Outside radius"] },
-  { worker: "Yousef Sami", task: "Site inspection", state: "Missed", event: "Start +62 min", breaks: [], flags: [] },
+  { id: 1, siteId: "B", worker: "Ali Hassan", task: "Pump maintenance", start: "09:00", state: "In progress", event: "Check-in 08:58", checkIn: "08:58", breaks: [], flags: [] },
+  { id: 2, siteId: "B", worker: "Omar Saeed", task: "Pump maintenance", start: "09:00", state: "On break", event: "Break 09:45", checkIn: "08:55", breaks: ["09:45 - now"], flags: [] },
+  { id: 3, siteId: "B", worker: "Fahad Aziz", task: "Equipment inspection", start: "09:30", state: "Late", event: "Start +35 min", checkIn: "", breaks: [], flags: ["Outside radius"] },
+  { id: 4, siteId: "B", worker: "Yousef Sami", task: "Site inspection", start: "09:00", state: "Missed", event: "Start +62 min", checkIn: "", breaks: [], flags: [] },
+  { id: 5, siteId: "B", worker: "Ali Hassan", task: "Equipment inspection", start: "15:30", state: "Not checked in", event: "Starts 15:30", checkIn: "", breaks: [], flags: [] },
 ];
 
 // Summary numbers for the reports page (FR-SV7)

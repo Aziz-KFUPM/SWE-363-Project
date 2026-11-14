@@ -44,12 +44,7 @@ src/
 |---|---|---|---|
 | Aziz | shell, components, mock data, guest pages, Profile, worker pages | FR-G1..G3, FR-W1..W5 | done |
 | Abdulrahman Khatib | `pages/supervisor/Worksites.jsx`, `RiskDashboard.jsx`, `ShiftPlanner.jsx`, `Checklist.jsx` | FR-SV1..SV4 | done |
-| Abdulaziz | `pages/supervisor/LiveBoard.jsx` | FR-SV5 | table from `liveBoard`, worker details (check-in time, breaks, flags) |
-| Abdulaziz | `pages/supervisor/Incidents.jsx` | FR-SV6 | filters by site/status, incident list from `incidents`, details with required action note, Resolve |
-| Abdulaziz | `pages/supervisor/Reports.jsx` | FR-SV7 | date range + site filters, summary cards from `reportSummary`, incidents per week (line) and by type (bar) drawn with plain divs or SVG, print button, empty-results state |
-| Abdulaziz | `pages/admin/Users.jsx` | FR-A1 | user table with search and role filter, Add/Edit user modal, Deactivate confirmation modal |
-| Abdulaziz | `pages/admin/SafetyRules.jsx` | FR-A2 | thresholds + restricted period form from `rules`, validation (increasing thresholds, end after start), "Rules updated, 3 scheduled tasks now conflict" message |
-| Abdulaziz | `pages/Notifications.jsx` | FR-N1 | list from `notifications`, Mark all read, each row links to its `to` path |
+| Abdulaziz Saleh | `pages/supervisor/LiveBoard.jsx`, `Incidents.jsx`, `Reports.jsx`, `pages/admin/Users.jsx`, `SafetyRules.jsx`, `pages/Notifications.jsx` | FR-SV5..SV7, FR-A1, FR-A2, FR-N1 | done |
 
 ## Coding rules for the team
 
