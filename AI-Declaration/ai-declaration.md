@@ -52,13 +52,17 @@ Signature: ____________________ Date: ____________
 
 ---
 
-**Member: [Abdulaziz – full name] – [KFUPM ID] – Supervisor and admin screens (Live board, Incidents, Reports, User management, Safety rules, Notifications)**
+**Member: Abdulaziz Saleh – 202456880 – Supervisor and admin screens (Live board, Incidents, Reports, User management, Safety rules, Notifications)**
 
-[ ] **Option 1 – I used AI tools in this milestone.**
-- Tools and models:
-- Purposes:
+[x] **Option 1 – I used AI tools in this milestone.**
+- Tools and models: Claude Code (Anthropic) running inside VS Code. Models: Claude Opus 5.5 for most of the session, then Claude Sonnet 5.5 after I switched models with /model for the final documentation step.
+- Purposes: Reading the team README, plan and Phase 3 requirements, and recovering the six Figma wireframes from the C01 transcript; converting the wireframes and requirements (FR-SV5, FR-SV6, FR-SV7, FR-A1, FR-A2, FR-N1) into React pages that reuse the shared components, mock data and structure already set up; asking Claude Code to explain its design choices (pop-up vs details card, line vs bar charts, why Missed is applied on Refresh, how the company rule relates to the mandatory baseline) so that I can explain every page; updating this declaration and the evidence folder. I told Claude Code to keep everything frontend only, with no backend.
 - Parts of the deliverable affected:
-- Usage Log IDs (Part C):
+  - `project-code/FrontEnd/src/pages/supervisor/LiveBoard.jsx`, `Incidents.jsx`, `Reports.jsx` (worksite filter and worker-details window; incident filters, Start Review and Resolve with a 10-1000 character action note; report filters, summary cards, SVG line chart, bar chart, print and empty state).
+  - `project-code/FrontEnd/src/pages/admin/Users.jsx`, `SafetyRules.jsx` (user search, role filter, add/edit/deactivate with validation; thresholds, company restricted period, conflict preview).
+  - `project-code/FrontEnd/src/pages/Notifications.jsx` (unread list, mark all read, links, removed-access message).
+  - Small additions to `src/data/mock.js` (site, start and check-in fields and a fifth row on the live board) and `src/styles.css` (selected row, new badges, grid-4, stat cards, charts, unread dot, print rules); ownership row in `FrontEnd/README.md`.
+- Usage Log IDs (Part C): C02, A04
 
 > I declare that the Usage Log and the attached evidence contain **all** of my AI use in this milestone, with complete and unedited conversations, and that I understand and can explain all AI-assisted content I contributed.
 
@@ -66,7 +70,7 @@ Signature: ____________________ Date: ____________
 
 > I declare that I did **not** use any generative AI tool in my contribution to this milestone. I understand that if this is found to be false, the case will be treated as **plagiarism** according to KFUPM regulations.
 
-Signature: ____________________ Date: ____________
+Signature: Abdulaziz Saleh Date: 2026-11-14
 
 ## Part C – AI Usage Log
 *One row per conversation (`C01`, `C02`, ...) or AI-generated artifact (`A01`, `A02`, ...).*
@@ -77,8 +81,8 @@ Signature: ____________________ Date: ____________
 | A01 | [Aziz], Abdulrahman Khatib | Claude Code (Claude Fable 5.1) | 2026-11-14 | Generated React front end (output of C01). | `project-code/FrontEnd/` | Unchanged after review; the artifact folder is identical to the submitted code. | `AI-Evidence/artifacts/A01-frontend-claude-output/` |
 | A02 | [Aziz] | Claude Code (Claude Fable 5.1) | 2026-11-14 | Implementation plan written by Claude Code and approved by me before coding (file list, routes, page behaviour, team split). | Project structure and task split | Read and approved in full; used as the basis for assigning pages to team members. | `AI-Evidence/artifacts/A02-implementation-plan.md` |
 | A03 | [Aziz] | Claude Code (Claude Fable 5.1) | 2026-11-14 | First draft of this AI declaration and the `AI-Evidence/` folder (README and transcript export script), filled from the course template with the team's description of the AI use. | `AI-Declaration/ai-declaration.md`, `AI-Evidence/` | Team members review, complete their own blocks, IDs, dates and signatures, then export to PDF. | `AI-Evidence/conversations/C01-claude-code-session-2026-11-14.md` |
-| C02 | | | | | | | |
-| A04 | | | | | | | |
+| C02 | Abdulaziz Saleh | Claude Code (Claude Opus 5.5, then Claude Sonnet 5.5) | 2026-11-14 | Asked Claude Code to do my part of the project: implement Live board, Incidents, Reports, User management, Safety rules and Notifications from the Figma wireframes and Phase 3 requirements, frontend only (no backend), following the team README and coding rules. Then asked it questions about its design choices and had it update this declaration and the evidence. | `project-code/FrontEnd/src/pages/` (FR-SV5, SV6, SV7, A1, A2, N1), `src/styles.css`, `src/data/mock.js`, `FrontEnd/README.md`, `AI-Declaration/`, `AI-Evidence/` | Reviewed the wireframes against the generated pages. Claude Code ran `npm run build` (passes), `oxlint` (only the existing AuthContext warning) and a server-render check of each page for its role. Asked Claude Code to explain its choices and kept the code unchanged where it met the requirements. Known gap: the company restricted period is only used in the conflict preview and is not enforced by the Shift planner. I also ran the app and tested all six pages myself; they work as expected. I made no manual edits to the generated code. | `AI-Evidence/conversations/C02-claude-code-session-2026-11-14.md` and `.jsonl` |
+| A04 | Abdulaziz Saleh | Claude Code (Claude Opus 5.5) | 2026-11-14 | React pages and shared-file changes generated in C02. | `project-code/FrontEnd/` (same files as C02) | Copied to the artifact folder as generated; identical to the submitted code unless you edit it afterwards. Tested by me in the running app; no manual edits. | `AI-Evidence/artifacts/A04-abdulaziz-pages-claude-output/` |
 
 ## Part D – Team Statement
 > We confirm that this declaration is complete and accurate. We take full responsibility for our submission, including AI-assisted parts, and understand that AI errors are not an excuse. We understand that a missing declaration results in a grade of zero, and that a false or incomplete declaration is an academic integrity violation.
@@ -87,4 +91,4 @@ Signature: ____________________ Date: ____________
 |-------------|----------|-----------|------|
 | [Aziz – full name] | | | |
 | Abdulrahman Khatib | | | |
-| [Abdulaziz – full name] | | | |
+| Abdulaziz Saleh | 202456880 | Abdulaziz Saleh | 2026-11-14 |

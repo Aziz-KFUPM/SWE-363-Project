@@ -11,6 +11,7 @@ artifacts/       what the AI produced, and the final version after our edits
 
 - `C01-claude-code-session-2026-11-14.jsonl` – raw Claude Code session transcript (complete, machine format).
 - `C01-claude-code-session-2026-11-14.md` – the same conversation exported to readable Markdown by `export_conversation.py`.
+- `C02-claude-code-session-2026-11-14.jsonl` / `.md` – Abdulaziz Saleh's session (Live board, Incidents, Reports, User management, Safety rules, Notifications, plus the design questions and this documentation update). Same export script. Re-copy and re-export after the last message so the file is complete.
 
 To refresh the export after the last session, run from this folder:
 
@@ -26,4 +27,6 @@ The raw transcript lives at `~/.claude/projects/-Users-aziz-Desktop-KFUPM-261-SW
   No manual edits were made after review, so this is also the final version; the live copy is `project-code/FrontEnd/`.
 - `A02-implementation-plan.md` – the implementation plan Claude Code wrote and the team approved before coding.
 
-Teammates who use AI for their pages should add their own `C02...`, `A04...` entries here and in `AI-Declaration/ai-declaration.md`.
+- `A04-abdulaziz-pages-claude-output/` – the six pages and the changed `mock.js` and `styles.css` as generated in C02 (the live copy is `FrontEnd/`).
+
+Teammates who use AI for their pages should add their own further entries (`C03...`, `A05...`) here and in `AI-Declaration/ai-declaration.md`.
