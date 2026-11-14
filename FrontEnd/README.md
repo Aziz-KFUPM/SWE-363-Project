@@ -43,10 +43,7 @@ src/
 | Owner | Files | Requirement | States to cover (from the traceability table) |
 |---|---|---|---|
 | Aziz | shell, components, mock data, guest pages, Profile, worker pages | FR-G1..G3, FR-W1..W5 | done |
-| Abdulrahman | `pages/supervisor/Worksites.jsx` | FR-SV1 | list with search, Add/Edit worksite form (name, project, location, assigned workers), delete confirmation modal |
-| Abdulrahman | `pages/supervisor/RiskDashboard.jsx` | FR-SV2 | card per site (temp, humidity, heat index, level badge, readiness, updated), hourly forecast (use `forecast` from mock), weather-unavailable state "Data from 09:30, live updates unavailable" |
-| Abdulrahman | `pages/supervisor/ShiftPlanner.jsx` | FR-SV3 | weekly calendar per site with 12:00-15:00 shaded, New/Edit task form, blocked-slot error, High-risk reason modal, cancel task |
-| Abdulrahman | `pages/supervisor/Checklist.jsx` | FR-SV4 | Yes/No per item from `checklistItems`, optional note, result "Site ready" / "Not ready" |
+| Abdulrahman Khatib | `pages/supervisor/Worksites.jsx`, `RiskDashboard.jsx`, `ShiftPlanner.jsx`, `Checklist.jsx` | FR-SV1..SV4 | done |
 | Abdulaziz | `pages/supervisor/LiveBoard.jsx` | FR-SV5 | table from `liveBoard`, worker details (check-in time, breaks, flags) |
 | Abdulaziz | `pages/supervisor/Incidents.jsx` | FR-SV6 | filters by site/status, incident list from `incidents`, details with required action note, Resolve |
 | Abdulaziz | `pages/supervisor/Reports.jsx` | FR-SV7 | date range + site filters, summary cards from `reportSummary`, incidents per week (line) and by type (bar) drawn with plain divs or SVG, print button, empty-results state |

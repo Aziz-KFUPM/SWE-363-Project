@@ -6,6 +6,7 @@ export const company = {
   name: "Desert Maintenance Co.",
   timezone: "Asia/Riyadh",
   demoDate: "Friday 10 July 2026",
+  demoDateIso: "2026-07-10",
 };
 
 export const roleLabels = { worker: "Worker", supervisor: "Supervisor", admin: "Administrator" };
